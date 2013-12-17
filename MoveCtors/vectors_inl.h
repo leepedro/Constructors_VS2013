@@ -33,8 +33,11 @@ namespace Tests
 	Vector<T> &Vector<T>::operator=(Vector<T> &&src)
 	{
 		std::cout << "Vector<T> &Vector<T>::operator=(Vector<T> &&)" << std::endl;
-		this->data_.clear();		// Important!
-		this->data_.swap(src.data_);
+		// Since std::vector<T> has its own move ctor and move assignment operator,
+		// it is unnecessary to clear and swap.
+		//this->data_.clear();
+		//this->data_.swap(src.data_);
+		this->data_ = std::move(src.data_);
 		return *this;
 	}
 
