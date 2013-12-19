@@ -48,11 +48,12 @@ int main(void)
 
 	// Vector(const std::initializer_list<T> &)
 	Tests::Vector<int> v9({ 11, 12 });
-	Tests::Vector<int> v10({ 11 });
-	Tests::Vector<int> v11 = { 11 };
+	Tests::Vector<int> v10 = { 11, 12 };
+	Tests::Vector<int> v11({ 11 });
+	Tests::Vector<int> v12 = { 11 };
 
 	// Vector(std::vector<T> &&)
-	Tests::Vector<int> v12 = std::move(s1);
+	Tests::Vector<int> v13 = std::move(s1);
 
 	// Vector<T> &operator=(const std::vector<T> &) or
 	// Vector(const std::vector<T> &) + Vector<T> &operator=(Vector<T> &&)
