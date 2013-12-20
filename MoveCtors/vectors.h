@@ -41,6 +41,11 @@ namespace Tests
 		std::vector<T> data_;
 	};
 
+	template <typename T>
+	std::vector<T> FuncStdVector(const std::vector<T> &src);
+
+	template <typename T>
+	Vector<T> FuncA(const Vector<T> &src);
 }
 #include "vectors_inl.h"
 

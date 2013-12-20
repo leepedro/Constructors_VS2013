@@ -63,4 +63,11 @@ int main(void)
 	// Vector<T> &operator=(std::vector<T> &&) or
 	// Vector(std::vector<T> &&) + Vector<T> &operator=(Vector<T> &&)
 	v12 = std::move(s2);
+
+	// Arguments
+	Tests::FuncStdVector<int>({ 0, 1, 2 });
+	Tests::FuncA(v12);
+
+	// Vector(const std::initializer_list<T> &) for input argument.
+	Tests::FuncA<int>({ 1, 2, 3 });
 }

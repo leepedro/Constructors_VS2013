@@ -101,6 +101,19 @@ namespace Tests
 	{
 		this->data_.push_back(value);
 	}
+
+	template <typename T>
+	std::vector<T> FuncStdVector(const std::vector<T> &src)
+	{
+		return{ 1, 2, 3 };
+	}
+
+	template <typename T>
+	Vector<T> FuncA(const Vector<T> &src)
+	{
+		// Vector(const std::initializer_list<T> &)
+		return{ 1, 2, 3 };
+	}
 }
 
 #endif
