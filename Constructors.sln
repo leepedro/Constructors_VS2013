@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MoveCtors", "MoveCtors\MoveCtors.vcxproj", "{B88D8574-660B-4830-B0B3-E725C33FFE77}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UniformInit", "UniformInit\UniformInit.vcxproj", "{4CB5721F-51EB-4A09-8C99-5B28F34DC753}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +17,10 @@ Global
 		{B88D8574-660B-4830-B0B3-E725C33FFE77}.Debug|Win32.Build.0 = Debug|Win32
 		{B88D8574-660B-4830-B0B3-E725C33FFE77}.Release|Win32.ActiveCfg = Release|Win32
 		{B88D8574-660B-4830-B0B3-E725C33FFE77}.Release|Win32.Build.0 = Release|Win32
+		{4CB5721F-51EB-4A09-8C99-5B28F34DC753}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4CB5721F-51EB-4A09-8C99-5B28F34DC753}.Debug|Win32.Build.0 = Debug|Win32
+		{4CB5721F-51EB-4A09-8C99-5B28F34DC753}.Release|Win32.ActiveCfg = Release|Win32
+		{4CB5721F-51EB-4A09-8C99-5B28F34DC753}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
